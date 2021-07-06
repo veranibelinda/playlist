@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Playlist</title>
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body>
+        <h1 class="title">WELCOME TO MY PLASLIST</h1>
+
+        <div class="create">
+            <h1 class="title-sub1">Create Playlist</h1>
+            <form>
+                <label for="title">Title</label><br>
+                <input type="text"><br>
+                <label for="desc">Description</label><br>
+                <textarea></textarea><br>
+                <button onclick="popup()">Submit</button>
+            </form>
+        </div>
+
+        <script>
+            function popup() {
+                window.alert("Kamu berhasil menambah playlist");
+            };
+        </script>
+
+        <div class="playlist">
+            <h2 class="title-sub2">Daftar Lagu</h2>
+
+            <div class="songs">
+                <div class="song">
+                    <img src="ariana.png">
+                    <h3 class="judul">Love Me Harder</h3>
+                    <p class="artist">Ariana Grande</p>
+                    <p class="album">My Everthing</p>
+                    <button id="like">Like</button>
+                </div>
+
+                <div class="song">
+                    <img src="taylor.png">
+                    <h3 class="judul">22</h3>
+                    <p class="artist">Taylor Swift</p>
+                    <p class="album">RED</p>
+                    <button id="like">Like</button>
+                </div>
+
+                <div class="song">
+                    <img src="taylor2.png">
+                    <h3 class="judul">Wildest Dream</h3>
+                    <p class="artist">Taylor Swift</p>
+                    <p class="album">1989</p>
+                    <button id="like">Like</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
